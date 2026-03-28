@@ -146,3 +146,4 @@
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/obj/Debug/net10.0/FinalMission.API.pdb
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/obj/Debug/net10.0/FinalMission.API.genruntimeconfig.cache
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/obj/Debug/net10.0/ref/FinalMission.API.dll
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/obj/Debug/net10.0/FinalMission.API.sourcelink.json
