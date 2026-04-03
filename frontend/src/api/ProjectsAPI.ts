@@ -1,11 +1,10 @@
 import type { Book } from "../types/Book";
+import { API_BASE_URL } from "../config/api";
 
 interface FetchBooksResponse {
     books: Book[];
     totalNumBooks: number;
 }
-
-const APIURL = 'https://localhost:5000/Bookstore'
 
 export const loadBooks = async (
     pageSize: number,
@@ -17,7 +16,7 @@ export const loadBooks = async (
             .map((cat) => `bookCategory=${encodeURIComponent(cat)}`)
             .join("&");
         const response = await fetch(
-            `${APIURL}/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ""}`
+            `${API_BASE_URL}/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ""}`
         );
 
         if (!response.ok) {
@@ -33,7 +32,7 @@ export const loadBooks = async (
 
 export const addBook = async(newBook: Book): Promise<Book> => {
     try {
-        const response = await fetch(`${APIURL}/AddBook`, {
+        const response = await fetch(`${API_BASE_URL}/AddBook`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -54,7 +53,7 @@ export const addBook = async(newBook: Book): Promise<Book> => {
 
 export const updateBook = async(bookId: number, updatedBook: Book) : Promise<Book> => {
     try{
-        const response = await fetch(`${APIURL}/UpdateBook/${bookId}`, {
+        const response = await fetch(`${API_BASE_URL}/UpdateBook/${bookId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -71,7 +70,7 @@ export const updateBook = async(bookId: number, updatedBook: Book) : Promise<Boo
 
 export const deleteBook = async (bookId: number): Promise<void> => {
     try {
-        const response = await fetch(`${APIURL}/DeleteBook/${bookId}`, {
+        const response = await fetch(`${API_BASE_URL}/DeleteBook/${bookId}`, {
             method: "DELETE",
         });
 

@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/0ce40a3a-9e20-49a2-8f2a-edaba4160740/resourceGroups/appsvc_windows_mexicocentral/providers/Microsoft.Web/sites/FinalMissionBackend",
+    "appService.deploySubpath": "backend/FinalMission.API/publish"
+}

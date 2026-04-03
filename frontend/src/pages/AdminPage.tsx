@@ -4,6 +4,7 @@ import Pagination from "../components/Pagination";
 import NewBookForm from "../components/NewBookForm";
 import EditBookForm from "../components/EditBookForm";
 import { deleteBook } from "../api/ProjectsAPI";
+import { API_BASE_URL } from "../config/api";
 
 const AdminPage = () => {
     const [books, setBooks] = useState<Book[]>([]);
@@ -23,7 +24,7 @@ const AdminPage = () => {
                 setLoading(true);
                 setError(null);
                 const response = await fetch(
-                    `https://localhost:5000/Bookstore/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}`
+                    `${API_BASE_URL}/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}`
                 );
                 if (!response.ok) {
                     throw new Error("Failed to fetch books");

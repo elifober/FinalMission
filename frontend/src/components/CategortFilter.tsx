@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { API_BASE_URL } from "../config/api";
 
 function CategoryFilter({
     selectedCategories,
@@ -20,7 +21,7 @@ function CategoryFilter({
         const fetchCategories = async () => {
             try {
                 const response = await fetch(
-                    `https://localhost:5000/Bookstore/GetBookCategories`
+                    `${API_BASE_URL}/GetBookCategories`
                 );
                 const data = await response.json();
                 setCategories(data);
