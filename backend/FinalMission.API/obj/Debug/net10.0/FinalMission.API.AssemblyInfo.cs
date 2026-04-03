@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinalMission.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5da7268c9d5098df7e0872a255e74586e9513f52")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+522e53ff5e49d6dac2510a3d85ab10668e2ea6dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("FinalMission.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FinalMission.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
