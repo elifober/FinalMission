@@ -1,10 +1,5 @@
-using System.Security.Authentication.ExtendedProtection;
 using Microsoft.EntityFrameworkCore;
 using FinalMission.API.Models;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,16 +7,28 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<BookstoreContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("BookstoreConnection")));
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+// Browsers block cross-origin requests unless the API allows the frontend origin.
+// Localhost is for dev; deployed sites (Azure Static Web Apps, etc.) need their URL allowed too.
 builder.Services.AddCors(options =>
     options.AddPolicy("AllowReactAppBooks",
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000");
-            policy.AllowAnyMethod();
-            policy.AllowAnyHeader();
+            var origins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
+            if (origins is { Length: > 0 })
+            {
+                policy.WithOrigins(origins)
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            }
+            else
+            {
+                policy.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            }
         }));
 
 var app = builder.Build();
