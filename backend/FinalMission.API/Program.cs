@@ -1,3 +1,4 @@
+using System.Security.Authentication.ExtendedProtection;
 using Microsoft.EntityFrameworkCore;
 using FinalMission.API.Models;
 using Microsoft.AspNetCore.Builder;
@@ -14,7 +15,14 @@ builder.Services.AddDbContext<BookstoreContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-builder.Services.AddCors();
+builder.Services.AddCors(options =>
+    options.AddPolicy("AllowReactAppBooks",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:3000");
+            policy.AllowAnyMethod();
+            policy.AllowAnyHeader();
+        }));
 
 var app = builder.Build();
 
@@ -26,7 +34,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors(x => x.WithOrigins("http://localhost:3000"));
+app.UseCors("AllowReactAppBooks");
 
 app.UseAuthorization();
 
