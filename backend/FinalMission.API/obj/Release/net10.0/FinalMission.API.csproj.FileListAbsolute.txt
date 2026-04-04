@@ -148,3 +148,9 @@
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/obj/Release/net10.0/FinalMission.API.pdb
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/obj/Release/net10.0/FinalMission.API.genruntimeconfig.cache
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/obj/Release/net10.0/ref/FinalMission.API.dll
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/bin/Release/net10.0/publish/web.config
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/bin/Release/net10.0/publish/appsettings.Development.json
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/bin/Release/net10.0/publish/appsettings.json
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/bin/Release/net10.0/publish/FinalMission.API.deps.json
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/bin/Release/net10.0/publish/FinalMission.API.runtimeconfig.json
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/bin/Release/net10.0/publish/FinalMission.API.staticwebassets.endpoints.json

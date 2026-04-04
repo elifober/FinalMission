@@ -2504,7 +2504,7 @@
     ]
   },
   "packageFolders": {
-    "/var/folders/jt/g_m6_jks0kn9clxrqrr9ddcr0000gn/T/cursor-sandbox-cache/f06626b6d2a4bbf5258782692af0ba49/nuget": {}
+    "/Users/eliasfobert/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2512,7 +2512,7 @@
       "projectUniqueName": "/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/FinalMission.API.csproj",
       "projectName": "FinalMission.API",
       "projectPath": "/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/FinalMission.API.csproj",
-      "packagesPath": "/var/folders/jt/g_m6_jks0kn9clxrqrr9ddcr0000gn/T/cursor-sandbox-cache/f06626b6d2a4bbf5258782692af0ba49/nuget",
+      "packagesPath": "/Users/eliasfobert/.nuget/packages/",
       "outputPath": "/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [

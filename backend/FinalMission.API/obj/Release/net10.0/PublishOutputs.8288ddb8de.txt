@@ -1,6 +1,12 @@
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/FinalMission.API
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/publish/web.config
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/appsettings.Development.json
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/appsettings.json
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/publish/appsettings.Development.json
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/publish/appsettings.json
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/publish/FinalMission.API.deps.json
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/publish/FinalMission.API.runtimeconfig.json
+/Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/publish/FinalMission.API.staticwebassets.endpoints.json
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/Data/Bookstore.sqlite
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/FinalMission.API.dll
 /Users/eliasfobert/IS Core/Semester 2/413/FinalMission/backend/FinalMission.API/publish/FinalMission.API.runtimeconfig.json
